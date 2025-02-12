@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url(/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url(/fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+    font-display: swap;
+}
+
+:root {
+    --background-color: #e6d9d8;
+    --primary-color: #674636;
+    --secundairy-color: #AAB396;
+    --alternate-color: #F7EED3;
+    --text-color: #53584e;
+}
+
+body {
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    background-color: var(--background-color);
+    background-image: url(/images/beige-paper.png);
+    color: var(--text-color);
+}
+
+main {
+    padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+    color: inherit;
+}
