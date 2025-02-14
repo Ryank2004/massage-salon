@@ -7,10 +7,10 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
 	<section class="hero">
-		<h1>Jouw moment van rust begint hier</h1>
+		<h1>Jouw moment van rust begint bij Zensation</h1>
 		<p>
-			Ervaar de ultieme ontspanning bij Zensation. Laat stress los en kom
-			volledig tot rust met onze professionele massages.
+			Ervaar de ultieme ontspanning. Laat stress los en kom volledig tot
+			rust met onze professionele massages.
 		</p>
 		<a
 			>Boek nu jouw moment van rust
@@ -51,7 +51,7 @@ import Layout from "../layouts/Layout.astro";
 			/>
 		</div>
 	</section>
-	
+
 	<section class="over">
 		<svg class="spinner" viewBox="0 0 250 250" width="150" height="150">
 			<g class="rotate-text">
@@ -70,7 +70,6 @@ import Layout from "../layouts/Layout.astro";
 				>
 					<textPath href="#circlePath" startOffset="0%">
 						Zensation • Zensation • Zensation • Zensation •
-						
 					</textPath>
 				</text>
 			</g>
@@ -88,6 +87,146 @@ import Layout from "../layouts/Layout.astro";
 			Met een warme, rustgevende sfeer en persoonlijke aandacht zorgen we ervoor
 			dat iedere massage volledig is afgestemd op jouw behoeften.
 		</p>
+		<a
+			>Boek nu jouw moment van rust
+			<div>
+				<svg
+					fill="#53584e"
+					height="24"
+					viewBox="0 -960 960 960"
+					width="24"
+					xmlns="http://www.w3.org/2000/svg"
+					><path
+						d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+					></path></svg
+				>
+			</div>
+		</a>
+		<div class="hero-image">
+			<img
+				src="/images/Massagesalon.webp"
+				alt="massagesalon"
+				width="900px"
+				height="600px"
+			/>
+		</div>
+	</section>
+	<section class="behandelingen">
+		<h2>Behandelingen</h2>
+		<p>
+			Ontdek onze zorgvuldig samengestelde behandelingen en kies wat jouw
+			lichaam nodig heeft.
+		</p>
+		<ul>
+			<li>
+				<a
+					>Ontspanningsmassage
+					<div>
+						<svg
+							fill="#53584e"
+							height="24"
+							viewBox="0 -960 960 960"
+							width="24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+							></path></svg
+						>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a
+					>Deep Tissue Massage
+					<div>
+						<svg
+							fill="#53584e"
+							height="24"
+							viewBox="0 -960 960 960"
+							width="24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+							></path></svg
+						>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a
+					>Hot Stone Massage
+					<div>
+						<svg
+							fill="#53584e"
+							height="24"
+							viewBox="0 -960 960 960"
+							width="24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+							></path></svg
+						>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a
+					>Hoofdpijn- & Nekmassage
+					<div>
+						<svg
+							fill="#53584e"
+							height="24"
+							viewBox="0 -960 960 960"
+							width="24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+							></path></svg
+						>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a
+					>Dry needling
+					<div>
+						<svg
+							fill="#53584e"
+							height="24"
+							viewBox="0 -960 960 960"
+							width="24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+							></path></svg
+						>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a
+					>Cupping
+					<div>
+						<svg
+							fill="#53584e"
+							height="24"
+							viewBox="0 -960 960 960"
+							width="24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+							></path></svg
+						>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section class="contact">
+		<h2>Contact</h2>
+		<p><span>E-mailadres:</span>info@zensation.nl</p>
+		<p><span>Telefoonnummer:</span>020-12345678</p>
+		<p><span>Adres:</span>Amsterdam-Zuid</p>
 	</section>
 </Layout>
 
@@ -101,7 +240,7 @@ import Layout from "../layouts/Layout.astro";
 
 	h1 {
 		font-size: 34px;
-		max-width: 80%;
+		max-width: 90%;
 		line-height: 1.2;
 		padding-bottom: 20px;
 	}
@@ -113,14 +252,14 @@ import Layout from "../layouts/Layout.astro";
 	}
 
 	a {
-		display: inline-flex;
+		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		border-bottom: 2px solid var(--text-color);
 		margin-bottom: 10px;
 	}
 
-	a:last-of-type {
+	a:nth-of-type(2) {
 		margin-bottom: 30px;
 	}
 
@@ -163,7 +302,7 @@ import Layout from "../layouts/Layout.astro";
 	.spinner {
 		position: absolute;
 		left: -15%;
-		top: -20%;
+		top: -10%;
 	}
 
 	.rotate-text {
@@ -178,5 +317,61 @@ import Layout from "../layouts/Layout.astro";
 		to {
 			transform: rotate(360deg);
 		}
+	}
+
+	.over a {
+		width: 80%;
+		margin-left: auto;
+		margin-bottom: 30px;
+	}
+
+	.over .hero-image {
+		position: relative;
+		width: 100%;
+		height: auto;
+		left: -20px;
+		margin-left: auto;
+		overflow: hidden;
+		z-index: 10;
+	}
+
+	.behandelingen {
+		padding: 0;
+	}
+
+	.behandelingen h2, .behandelingen p {
+		padding: 10px 20px;
+	}
+
+	.behandelingen ul {
+		list-style: none;
+		margin-top: 20px;
+	}
+
+	.behandelingen a {
+		padding: 20px 0 20px 20px;
+		margin: 0;
+		border-top: 2px solid var(--text-color);
+		border-bottom: 0;
+	}
+
+	.behandelingen ul li:nth-of-type(6) {
+		border-bottom: 2px solid var(--text-color);
+		/* Ruimte vrijmaken, later weghalen */
+		margin-bottom: 30px;
+	}
+
+	a div {
+		margin-right: 25px;
+	}
+
+	.contact h2 {
+		margin-left: auto;
+		padding: 5px 0 20px 0;
+	}
+
+	.contact p {
+		width: 80%;
+		margin-left: auto;
 	}
 </style>
