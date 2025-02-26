@@ -1,0 +1,62 @@
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <svg
+                width="80px"
+                height="80px"
+                viewBox="0 0 126 126"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M82 35.36V36.96L50.08 90.16H65.76C68.2667 90.16 70.2933 89.8933 71.84 89.36C73.44 88.8267 74.6933 88 75.6 86.88C76.56 85.7067 77.28 84.16 77.76 82.24C78.24 80.32 78.6133 77.9733 78.88 75.2H80.72C80.56 76.8533 80.48 79.04 80.48 81.76C80.48 82.7733 80.5067 84.24 80.56 86.16C80.6667 88.0267 80.8267 89.9733 81.04 92C79.0667 91.8933 76.9067 91.84 74.56 91.84C72.2133 91.7867 69.8667 91.76 67.52 91.76C65.2267 91.76 63.0933 91.76 61.12 91.76C57.9733 91.76 54.64 91.7867 51.12 91.84C47.6533 91.84 44.4 91.8933 41.36 92V90.4L73.52 37.2H57.92C55.4133 37.2 53.36 37.4667 51.76 38C50.2133 38.5333 48.96 39.3867 48 40.56C47.0933 41.68 46.4 43.2 45.92 45.12C45.44 47.04 45.0667 49.3867 44.8 52.16H42.96C43.0667 51.3067 43.12 50.32 43.12 49.2C43.1733 48.08 43.2 46.88 43.2 45.6C43.2 44.5867 43.1467 43.1467 43.04 41.28C42.9867 39.36 42.8533 37.3867 42.64 35.36C44.6133 35.4133 46.7733 35.4667 49.12 35.52C51.4667 35.5733 53.8133 35.6 56.16 35.6C58.5067 35.6 60.64 35.6 62.56 35.6C65.6 35.6 68.8533 35.6 72.32 35.6C75.84 35.5467 79.0667 35.4667 82 35.36ZM95.58 82.88C96.9667 82.88 98.1667 83.3867 99.18 84.4C100.193 85.4133 100.7 86.6133 100.7 88C100.7 89.3867 100.193 90.5867 99.18 91.6C98.1667 92.6133 96.9667 93.12 95.58 93.12C94.1933 93.12 92.9933 92.6133 91.98 91.6C90.9667 90.5867 90.46 89.3867 90.46 88C90.46 86.6133 90.9667 85.4133 91.98 84.4C92.9933 83.3867 94.1933 82.88 95.58 82.88Z"
+                    fill="#e6d9d8"></path>
+                <circle cx="63" cy="63" r="61" stroke="#e6d9d8" stroke-width="4"
+                ></circle>
+            </svg>
+        </div>
+
+        <nav class="footer-menu">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">behandelingen</a></li>
+                <li><a href="#">over ons</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-areas: "logo menu";
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        padding: 60px 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 5px; /* Optioneel: ruimte tussen de items */
+    }
+
+    ul li a {
+        display: inline-block; /* Zorgt ervoor dat de border alleen onder de tekst komt */
+        text-decoration: none;
+        color: var(--background-color);
+        border-bottom: 1px solid var(--background-color);
+    }
+</style>

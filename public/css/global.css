@@ -24,6 +24,10 @@
     --text-color: #53584e;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Cairo", Arial, Helvetica, sans-serif;
     font-weight: 300;
@@ -45,4 +49,16 @@ a {
     text-decoration: none;
     font-family: "Cairo", Arial, Helvetica, sans-serif;
     color: inherit;
+}
+
+@media screen and (min-width: 1080px) {
+    main {
+        padding-top: 120px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    main {
+        padding-top: 140px;
+    }
 }
