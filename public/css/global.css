@@ -34,6 +34,7 @@ body {
     background-color: var(--background-color);
     background-image: url(/images/beige-paper.png);
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
 
 main {
