@@ -18,12 +18,13 @@ import Spinner from "../components/spinner.astro";
 		});
 	});
 </script>
-  
-  
+
 <Layout>
 	<section class="hero">
 		<div class="hero-content">
-			<h1 class="hero-title">Jouw moment van rust begint bij Zensation</h1>
+			<h1 class="hero-title">
+				Jouw moment van rust begint bij Zensation
+			</h1>
 			<p>
 				Ervaar de ultieme ontspanning. Laat stress los en kom volledig
 				tot rust met onze professionele massages.
@@ -313,29 +314,68 @@ import Spinner from "../components/spinner.astro";
 </Layout>
 <script is:inline>
 	document.addEventListener("DOMContentLoaded", () => {
-	  const containers = document.querySelectorAll('.over');
-  
-	  if (typeof gsap !== 'undefined' && containers.length > 0) {
-		gsap.registerPlugin(ScrollTrigger);
-  
-		containers.forEach(container => {
-		  gsap.to(container, {
-			x: 600,
-			scrollTrigger: {
-			  trigger: container,
-			  start: 'top 100%',
-			  end: '80% 100%',
-			  scrub: true,
-			  markers: true
-			}
-		  });
+		const containers = document.querySelectorAll(".over");
+
+		if (typeof gsap !== "undefined" && containers.length > 0) {
+			gsap.registerPlugin(ScrollTrigger);
+
+			containers.forEach((container) => {
+				gsap.to(container, {
+					x: 0,
+					scrollTrigger: {
+						trigger: container,
+						start: "top 100%",
+						end: "80% 100%",
+						scrub: true,
+						markers: true,
+					},
+				});
+			});
+		} else {
+			console.warn("GSAP of containers niet gevonden");
+		}
+		if (typeof window.SplitType === "undefined") {
+			console.warn("SplitType niet gevonden");
+			return;
+		}
+
+		// 1. Split de tekst in lijnen
+		const myTitle = new window.SplitType(".hero-title", {
+			types: "lines",
+			lineClass: "line", // zorgt dat elke lijn de class 'line' krijgt
 		});
-	  } else {
-		console.warn("GSAP of containers niet gevonden");
-	  }
+
+		console.log("SplitType lines:", myTitle.lines);
+
+		// 2. Voeg wrappers toe rond elke lijn (voor clip-path of overflow hidden effecten)
+		myTitle.lines.forEach((line) => {
+			const wrapper = document.createElement("div");
+			wrapper.classList.add("line-wrapper-title");
+
+			// Plaats de wrapper vóór de lijn in de DOM en verplaats de lijn erin
+			line.parentNode.insertBefore(wrapper, line);
+			wrapper.appendChild(line);
+		});
+
+		// 3. Animeren van de lijnen
+		if (typeof gsap === "undefined") {
+			console.warn("GSAP niet gevonden");
+			return;
+		}
+
+		gsap.fromTo(
+			".line", // target nog steeds de line zelf, wrapper doet niets behalve maskeren
+			{ y: 115 },
+			{
+				y: 0,
+				stagger: 0.1,
+				delay: 0.1,
+				duration: 0.6,
+				ease: "power3.out",
+			},
+		);
 	});
-  </script>
-  
+</script>
 
 <style>
 	section {
@@ -387,6 +427,19 @@ import Spinner from "../components/spinner.astro";
 		align-items: center;
 		margin-right: 5px;
 	}
+
+	.line-wrapper-title {
+		position: relative;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		height: 100px; /* Pas de hoogte aan op basis van je design */
+	}
+
+	.line {
+		display: inline-block;
+		transform: translateY(115px);
+		transition: transform 0.5s ease-out;
+	}
+	
 
 	.hero-image {
 		position: relative;
@@ -550,9 +603,9 @@ import Spinner from "../components/spinner.astro";
 	}
 
 	.kaart iframe {
-	width: 100%;
-	aspect-ratio: 1 / 1;
-	height: auto; /* Zorgt dat height automatisch blijft */
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		height: auto; /* Zorgt dat height automatisch blijft */
 	}
 
 	@media screen and (min-width: 1080px) {

@@ -59,6 +59,20 @@ a {
     color: inherit;
 }
 
+
+.line-wrapper-title {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .line {
+    display: inline-block;
+    transform: translateY(115px);
+    transition: transform 0.2s ease-out;
+  }
+  
+
 @media screen and (min-width: 1080px) {
     main {
         padding-top: 120px;
