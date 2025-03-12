@@ -24,7 +24,8 @@
     --text-color: #53584e;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -46,9 +47,14 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Playfair", Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
@@ -64,14 +70,14 @@ a {
     display: block;
     overflow: hidden;
     position: relative;
-  }
-  
-  .line {
+}
+
+.line {
     display: inline-block;
     transform: translateY(115px);
     transition: transform 0.2s ease-out;
-  }
-  
+}
+
 
 @media screen and (min-width: 1080px) {
     main {
