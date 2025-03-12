@@ -18,11 +18,12 @@ import Spinner from "../components/spinner.astro";
 		});
 	});
 </script>
-
+  
+  
 <Layout>
 	<section class="hero">
 		<div class="hero-content">
-			<h1>Jouw moment van rust begint bij Zensation</h1>
+			<h1 class="hero-title">Jouw moment van rust begint bij Zensation</h1>
 			<p>
 				Ervaar de ultieme ontspanning. Laat stress los en kom volledig
 				tot rust met onze professionele massages.
@@ -310,6 +311,31 @@ import Spinner from "../components/spinner.astro";
 		</div>
 	</section>
 </Layout>
+<script is:inline>
+	document.addEventListener("DOMContentLoaded", () => {
+	  const containers = document.querySelectorAll('.over');
+  
+	  if (typeof gsap !== 'undefined' && containers.length > 0) {
+		gsap.registerPlugin(ScrollTrigger);
+  
+		containers.forEach(container => {
+		  gsap.to(container, {
+			x: 600,
+			scrollTrigger: {
+			  trigger: container,
+			  start: 'top 100%',
+			  end: '80% 100%',
+			  scrub: true,
+			  markers: true
+			}
+		  });
+		});
+	  } else {
+		console.warn("GSAP of containers niet gevonden");
+	  }
+	});
+  </script>
+  
 
 <style>
 	section {
@@ -802,7 +828,7 @@ import Spinner from "../components/spinner.astro";
 		.contact {
 			display: flex;
 			flex-direction: row-reverse;
-			padding: 100px 40px;
+			padding: 200px 40px;
 			align-items: center;
 		}
 
