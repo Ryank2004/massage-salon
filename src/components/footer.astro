@@ -2,8 +2,6 @@
     <div class="footer-container">
         <div class="footer-logo">
             <svg
-                width="80px"
-                height="80px"
                 viewBox="0 0 126 126"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +31,11 @@
         color: var(--background-color);
     }
 
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+    }
+
     .footer-container {
         display: grid;
         grid-template-areas: "logo menu";
@@ -58,5 +61,46 @@
         text-decoration: none;
         color: var(--background-color);
         border-bottom: 1px solid var(--background-color);
+    }
+
+    @media screen and (min-width: 1080px) {
+        .footer-container {
+            justify-content: space-between;
+            padding: 60px;
+        }
+
+        .footer-logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        ul {
+            flex-direction: row;
+        }
+
+        ul li {
+        
+        }
+
+        ul li a {
+            font-size: 24px;
+            border-bottom: 2px solid var(--background-color);
+            margin-right: 24px;
+            line-height: 1.4;
+        }
+
+        ul li:nth-of-type(4) a {
+            margin-right: 0;
+        }
+
+        ul li::before {
+            content: "";
+            display: inline-block; /* Dit maakt breedte en hoogte van kracht */
+            width: 8px;
+            height: 8px;
+            background-color: white; /* Dit geeft het kleur zodat je het ziet */
+            margin-right: 24px; /* Zorgt dat er ruimte komt tussen bolletje en tekst */
+            border-radius: 50%; /* Optioneel: maakt het een cirkel */
+        }
     }
 </style>

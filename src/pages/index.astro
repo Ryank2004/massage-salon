@@ -21,41 +21,47 @@ import Spinner from "../components/spinner.astro";
 
 <Layout>
 	<section class="hero">
-		<h1>Jouw moment van rust begint bij Zensation</h1>
-		<p>
-			Ervaar de ultieme ontspanning. Laat stress los en kom volledig tot
-			rust met onze professionele massages.
-		</p>
-		<a
-			>boek nu jouw moment van rust
-			<div>
-				<svg
-					fill="#53584e"
-					height="24"
-					viewBox="0 -960 960 960"
-					width="24"
-					xmlns="http://www.w3.org/2000/svg"
-					><path
-						d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
-					></path></svg
-				>
-			</div>
-		</a>
-		<a
-			>of bekijk onze behandelingen
-			<div>
-				<svg
-					fill="#53584e"
-					height="24"
-					viewBox="0 -960 960 960"
-					width="24"
-					xmlns="http://www.w3.org/2000/svg"
-					><path
-						d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
-					></path></svg
-				>
-			</div>
-		</a>
+		<div class="hero-content">
+			<h1>Jouw moment van rust begint bij Zensation</h1>
+			<p>
+				Ervaar de ultieme ontspanning. Laat stress los en kom volledig
+				tot rust met onze professionele massages.
+			</p>
+			<a
+				>boek nu jouw moment van rust
+				<div>
+					<svg
+						fill="#53584e"
+						height="24"
+						viewBox="0 -960 960 960"
+						width="24"
+						xmlns="http://www.w3.org/2000/svg"
+						><path
+							d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+						></path></svg
+					>
+				</div>
+			</a>
+			<a
+				>of bekijk onze behandelingen
+				<div>
+					<svg
+						fill="#53584e"
+						height="24"
+						viewBox="0 -960 960 960"
+						width="24"
+						xmlns="http://www.w3.org/2000/svg"
+						><path
+							d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+						></path></svg
+					>
+				</div>
+			</a>
+		</div>
+
+		<div class="spinner-container left">
+			<Spinner />
+		</div>
 		<div class="hero-image">
 			<img
 				src="/images/Massagesalon.webp"
@@ -67,37 +73,36 @@ import Spinner from "../components/spinner.astro";
 	</section>
 
 	<section class="over">
-		<div class="spinner-container left">
-			<Spinner />
+		<div class="over-content">
+			<h2>Over Zensation</h2>
+			<p>
+				Al 20 jaar bieden wij in het hart van Amsterdam Zuid een plek
+				waar je kunt ontsnappen aan de drukte en volledig tot rust kunt
+				komen. Onze massages zijn meer dan alleen een behandeling, ze
+				zijn een moment van aandacht, herstel en ontspanning.<br />
+				<br />
+				Of je nu op zoek bent naar diepe ontspanning, spierherstel of stressverlichting,
+				ons ervaren team zorgt ervoor dat jij je herboren voelt.
+				<br />
+				Met een warme, rustgevende sfeer en persoonlijke aandacht zorgen
+				we ervoor dat iedere massage volledig is afgestemd op jouw behoeften.
+			</p>
+			<a
+				>Boek nu jouw moment van rust
+				<div>
+					<svg
+						fill="#53584e"
+						height="24"
+						viewBox="0 -960 960 960"
+						width="24"
+						xmlns="http://www.w3.org/2000/svg"
+						><path
+							d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+						></path></svg
+					>
+				</div>
+			</a>
 		</div>
-		<h2>Over Zensation</h2>
-		<p>
-			Al 20 jaar bieden wij in het hart van Amsterdam Zuid een plek waar
-			je kunt ontsnappen aan de drukte en volledig tot rust kunt komen.
-			Onze massages zijn meer dan alleen een behandeling, ze zijn een
-			moment van aandacht, herstel en ontspanning.<br />
-			<br />
-			Of je nu op zoek bent naar diepe ontspanning, spierherstel of stressverlichting,
-			ons ervaren team zorgt ervoor dat jij je herboren voelt.
-			<br />
-			Met een warme, rustgevende sfeer en persoonlijke aandacht zorgen we ervoor
-			dat iedere massage volledig is afgestemd op jouw behoeften.
-		</p>
-		<a
-			>Boek nu jouw moment van rust
-			<div>
-				<svg
-					fill="#53584e"
-					height="24"
-					viewBox="0 -960 960 960"
-					width="24"
-					xmlns="http://www.w3.org/2000/svg"
-					><path
-						d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
-					></path></svg
-				>
-			</div>
-		</a>
 		<div class="hero-image">
 			<img
 				src="/images/Massagesalon.webp"
@@ -272,36 +277,38 @@ import Spinner from "../components/spinner.astro";
 		</ul>
 	</section>
 	<section class="contact">
-		<h2>Contact</h2>
-		<p><span>E-mailadres:</span> info@zensation.nl</p>
-		<p><span>Telefoonnummer:</span> 020-12345678</p>
-		<p><span>Adres:</span> Amsterdam-Zuid</p>
-		<a
-			>Boek nu jouw moment van rust
-			<div>
-				<svg
-					fill="#53584e"
-					height="24"
-					viewBox="0 -960 960 960"
-					width="24"
-					xmlns="http://www.w3.org/2000/svg"
-					><path
-						d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
-					></path></svg
-				>
-			</div>
-		</a>
+		<div class="contact-content">
+			<h2>Contact</h2>
+			<p><span>E-mailadres:</span> info@zensation.nl</p>
+			<p><span>Telefoonnummer:</span> 020-12345678</p>
+			<p><span>Adres:</span> Amsterdam-Zuid</p>
+			<a
+				>Boek nu jouw moment van rust
+				<div>
+					<svg
+						fill="#53584e"
+						height="24"
+						viewBox="0 -960 960 960"
+						width="24"
+						xmlns="http://www.w3.org/2000/svg"
+						><path
+							d="m700-300-57-56 84-84h-607v-80h607l-83-84 57-56 179 180z"
+						></path></svg
+					>
+				</div>
+			</a>
+		</div>
+		<div class="kaart" style="width: 100%">
+			<iframe
+				width="100%"
+				height="600"
+				frameborder="0"
+				scrolling="no"
+				src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Amsterdam-zuid(Sensation)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+			>
+			</iframe>
+		</div>
 	</section>
-	<div class="kaart" style="width: 100%">
-		<iframe
-			width="100%"
-			height="600"
-			frameborder="0"
-			scrolling="no"
-			src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Amsterdam-zuid(Sensation)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
-		>
-		</iframe>
-	</div>
 </Layout>
 
 <style>
@@ -320,6 +327,10 @@ import Spinner from "../components/spinner.astro";
 
 	h2 {
 		font-size: 28px;
+	}
+
+	.hero {
+		position: relative;
 	}
 
 	.hero p {
@@ -389,7 +400,20 @@ import Spinner from "../components/spinner.astro";
 	.left {
 		position: absolute;
 		left: -15%;
-		top: -42%;
+		top: 60%;
+	}
+
+	@media screen and (min-width: 351px) {
+		.left {
+			top: 55%;
+		}
+	}
+
+	@media screen and (min-width: 440px) {
+		.left {
+			top: 52%;
+			scale: 1.15;
+		}
 	}
 
 	.right {
@@ -496,15 +520,302 @@ import Spinner from "../components/spinner.astro";
 	}
 
 	.kaart {
-		padding: 0 20px 40px 20px;
+		padding: 40px 20px 40px 20px;
 	}
 
 	.kaart iframe {
-		height: 400px;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	height: auto; /* Zorgt dat height automatisch blijft */
 	}
 
 	@media screen and (min-width: 1080px) {
+		section {
+			flex-direction: row;
+			padding: 60px 40px 10px 40px;
+		}
 
+		.hero-content {
+			max-width: 50%;
+		}
+
+		h1 {
+			font-size: 48px;
+			max-width: 90%;
+			line-height: 1.1;
+			padding-bottom: 30px;
+		}
+
+		p {
+			font-size: 24px;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 3px solid var(--text-color);
+			margin-bottom: 20px;
+			font-size: 24px;
+		}
+
+		a:nth-of-type(2) {
+			margin-bottom: 20px;
+		}
+
+		a div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 5px;
+			width: 30px;
+			height: 30px;
+		}
+
+		a div svg {
+			width: 30px;
+			height: 30px;
+		}
+
+		.hero p {
+			margin-bottom: 30px;
+		}
+
+		.hero-image {
+			right: -100px;
+		}
+
+		img {
+			width: 60vw;
+			height: auto;
+		}
+
+		.over {
+			display: flex;
+			flex-direction: row-reverse;
+			position: relative;
+			padding: 100px 0px;
+		}
+
+		.over-content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			min-width: 450px;
+			padding: 120px 40px 0 80px;
+		}
+
+		h2 {
+			font-size: 40px;
+		}
+
+		.over h2 {
+			width: 100%;
+			margin-left: 0;
+			padding: 20px 0 40px 0;
+		}
+
+		.over p {
+			width: 100%;
+			margin-left: 0;
+			padding-bottom: 40px;
+		}
+
+		.over a {
+			width: 95%;
+			margin: 0;
+		}
+
+		.over .hero-image {
+			/* left: -100px; */
+			left: -350px;
+			overflow: visible;
+			right: 0;
+		}
+
+		.over .hero-image img {
+			width: 160%;
+			height: auto;
+		}
+
+		.left {
+			position: absolute;
+			scale: 1.8;
+			left: -3%;
+			top: 110%;
+		}
+
+		.behandelingen {
+			display: flex;
+			flex-direction: column;
+			padding: 100px 40px 60px 40px;
+			width: 60vw;
+		}
+
+		.behandelingen h2 {
+			padding-bottom: 30px;
+		}
+
+		.right {
+			display: none;
+		}
+
+		.contact {
+			display: flex;
+			flex-direction: row-reverse;
+			padding: 100px 40px;
+			align-items: center;
+		}
+
+		.contact-content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin-left: auto;
+			/* padding-top: 110px; */
+		}
+
+		.kaart {
+			padding: 0 60px 0 0;
+		}
 	}
 
+	@media screen and (min-width: 1280px) {
+		section {
+			flex-direction: row;
+			padding: 60px 60px 10px 60px;
+		}
+
+		.hero-content {
+			max-width: 50%;
+		}
+
+		h1 {
+			font-size: 64px;
+			max-width: 90%;
+			line-height: 1.1;
+			padding-bottom: 30px;
+		}
+
+		p {
+			font-size: 30px;
+		}
+
+		a {
+			font-size: 30px;
+		}
+
+		a div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 5px;
+			width: 40px;
+			height: 40px;
+		}
+
+		a div svg {
+			width: 40px;
+			height: 40px;
+		}
+
+		.hero p {
+			margin-bottom: 30px;
+		}
+
+		.hero-image {
+			right: -100px;
+		}
+
+		img {
+			width: 62vw;
+		}
+
+		.over {
+			padding: 200px 0px;
+		}
+
+		.over-content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			min-width: 450px;
+			padding: 120px 60px 0 280px;
+		}
+
+		h2 {
+			font-size: 48px;
+		}
+
+		.over h2 {
+			width: 100%;
+			margin-left: 0;
+			padding: 20px 0 40px 0;
+		}
+
+		.over p {
+			width: 100%;
+			margin-left: 0;
+			padding-bottom: 40px;
+		}
+
+		.over a {
+			width: 95%;
+			margin: 0;
+		}
+
+		.over .hero-image {
+			/* left: -100px; */
+			width: 70vw;
+			left: -250px;
+			overflow: visible;
+			right: 0;
+		}
+
+		.over .hero-image img {
+			width: 160%;
+			height: auto;
+		}
+
+		.left {
+			position: absolute;
+			scale: 2.4;
+			left: -3%;
+			top: 120%;
+		}
+
+		.behandelingen {
+			display: flex;
+			flex-direction: column;
+			padding: 100px 60px 60px 60px;
+			width: 60vw;
+		}
+
+		.behandelingen h2 {
+			padding-bottom: 30px;
+		}
+
+		.right {
+			display: none;
+		}
+
+		.contact {
+			display: flex;
+			flex-direction: row-reverse;
+			padding: 100px 40px;
+			align-items: center;
+		}
+
+		.contact-content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin-left: auto;
+			/* padding-top: 110px; */
+		}
+
+		.kaart {
+			padding: 0 100px 0 0;
+		}
+	}
 </style>

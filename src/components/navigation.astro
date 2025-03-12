@@ -53,14 +53,16 @@ const currentPage = Astro.url.pathname;
     </div>
   </div>
   <ul class="menu">
-    <li><a href="#" class={currentPage === "/" ? "active" : ""}>home</a></li>
+    <li><a href="/" class={currentPage === "/" ? "active" : ""}>home</a></li>
     <li>
-      <a href="#" class={currentPage === "/massages" ? "active" : ""}
-        >massages</a>
+      <a href="/massages" class={currentPage === "/massages" ? "active" : ""}
+        >massages</a
+      >
     </li>
     <li>
       <a href="#" class={currentPage === "/over-ons" ? "active" : ""}
-        >over ons</a>
+        >over ons</a
+      >
     </li>
     <li>
       <a href="#" class={currentPage === "/boek" ? "active" : ""}>boek</a>
@@ -194,7 +196,7 @@ const currentPage = Astro.url.pathname;
     background-color: var(--text-color);
     color: var(--background-color);
     padding: 20px;
-    transition: left 0.4s cubic-bezier(0.000, 0.000, 0.145, 0.970);
+    transition: left 0.4s cubic-bezier(0, 0, 0.145, 0.97);
   }
 
   .menu {
@@ -226,9 +228,9 @@ const currentPage = Astro.url.pathname;
     }
 
     .header-container a {
-    width: 80px;
-    height: 80px;
-  }
+      width: 80px;
+      height: 80px;
+    }
 
     .header-container svg {
       width: 80px;
@@ -239,12 +241,31 @@ const currentPage = Astro.url.pathname;
       scale: 1.4;
     }
 
-    .hamburger-toggle {
+    .nav-container {
+      padding: 20px 40px;
+    }
+
+    .nav-container .hamburger-toggle {
       gap: 16px;
+      height: 100px;
     }
 
     .hamburger-toggle p {
       font-size: 30px;
+    }
+
+    .menu {
+      display: flex;
+      margin-left: 0px;
+      font-size: 72px;
+    }
+
+    .menu li a {
+      transition: all .2s ease-out;
+    }
+
+    .menu li a:hover {
+      margin-left: 40px;
     }
   }
 
@@ -255,9 +276,9 @@ const currentPage = Astro.url.pathname;
     }
 
     .header-container a {
-    width: 100px;
-    height: 100px;
-  }
+      width: 100px;
+      height: 100px;
+    }
 
     .header-container svg {
       width: 100px;
