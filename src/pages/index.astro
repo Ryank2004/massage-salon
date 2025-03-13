@@ -52,7 +52,7 @@ import Spinner from "../components/spinner.astro";
 			</div>
 			<div class="hero-image">
 				<img
-					src="/images/Massagesalon.webp"
+					src="/images/zweedse-massage.webp"
 					alt="massagesalon"
 					width="900px"
 					height="600px"
@@ -98,7 +98,7 @@ import Spinner from "../components/spinner.astro";
 		</div>
 		<div class="hero-image">
 			<img
-				src="/images/Massagesalon.webp"
+				src="/images/ontspanningsmassage.webp"
 				alt="massagesalon"
 				width="900px"
 				height="600px"
@@ -541,7 +541,7 @@ import Spinner from "../components/spinner.astro";
 
 	.hero-image {
 		position: relative;
-		width: 100%;
+		width: 100vw;
 		height: auto;
 		right: -20px;
 		margin-left: auto;
@@ -551,8 +551,9 @@ import Spinner from "../components/spinner.astro";
 	}
 
 	img {
-		width: 100vw;
+		width: 100%;
 		height: auto;
+		border-radius: 10px;
 	}
 
 	.over {
@@ -608,12 +609,13 @@ import Spinner from "../components/spinner.astro";
 
 	.over .hero-image {
 		position: relative;
-		width: 100%;
+		width: 100vw;
 		height: auto;
-		left: -20px;
-		margin-left: auto;
+		left: -60px;
+		margin-right: auto;
 		overflow: hidden;
 		z-index: 10;
+		right: 0
 	}
 
 	.behandelingen {
@@ -762,10 +764,10 @@ import Spinner from "../components/spinner.astro";
 
 		.hero-image {
 			right: -100px;
+			width: 62vw;
 		}
 
 		img {
-			width: 60vw;
 			height: auto;
 		}
 
@@ -773,7 +775,7 @@ import Spinner from "../components/spinner.astro";
 			display: flex;
 			flex-direction: row-reverse;
 			position: relative;
-			padding: 100px 0px;
+			padding: 200px 0px;
 		}
 
 		.over-content {
@@ -807,13 +809,14 @@ import Spinner from "../components/spinner.astro";
 
 		.over .hero-image {
 			/* left: -100px; */
-			left: -350px;
+			transform: scaleX(-1);
+			left: -100px;
 			overflow: visible;
 			right: 0;
 		}
 
 		.over .hero-image img {
-			width: 160%;
+			width: 52vw;
 			height: auto;
 		}
 
@@ -821,7 +824,7 @@ import Spinner from "../components/spinner.astro";
 			position: absolute;
 			scale: 1.8;
 			left: -3%;
-			top: 110%;
+			top: 130%;
 		}
 
 		.behandelingen {
@@ -877,11 +880,11 @@ import Spinner from "../components/spinner.astro";
 		}
 
 		p {
-			font-size: 30px;
+			font-size: 28px;
 		}
 
 		a {
-			font-size: 30px;
+			font-size: 28px;
 		}
 
 		a div {
@@ -907,7 +910,7 @@ import Spinner from "../components/spinner.astro";
 		}
 
 		img {
-			width: 62vw;
+			width: 55vw;
 		}
 
 		.over {
@@ -945,8 +948,8 @@ import Spinner from "../components/spinner.astro";
 
 		.over .hero-image {
 			/* left: -100px; */
-			width: 70vw;
-			left: -250px;
+			width: 62vw;
+			left: 100px;
 			overflow: visible;
 			right: 0;
 		}
@@ -967,7 +970,7 @@ import Spinner from "../components/spinner.astro";
 			display: flex;
 			flex-direction: column;
 			padding: 100px 60px 60px 60px;
-			width: 60vw;
+			width: 45vw;
 		}
 
 		.behandelingen h2 {
