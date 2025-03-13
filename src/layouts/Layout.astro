@@ -8,9 +8,9 @@ import Footer from "../components/footer.astro";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
 		<link rel="stylesheet" href="/css/global.css" />
-		<title>Astro Basics</title>
+		<title>Zensation</title>
 	</head>
 	<body>
 		<div class="page-wrapper">
@@ -24,7 +24,7 @@ import Footer from "../components/footer.astro";
 			import Lenis from "@studio-freight/lenis";
 
 			const lenis = new Lenis({
-				lerp: 0.1, // soepelheid (0 - 1)
+				lerp: 0.05, // soepelheid (0 - 1)
 				// smooth: true,
 			});
 
@@ -46,7 +46,6 @@ import Footer from "../components/footer.astro";
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
 			defer></script>
 
-		<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 		<script src="https://unpkg.com/split-type"></script>
 	</body>
 </html>
