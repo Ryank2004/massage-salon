@@ -10,6 +10,7 @@ import Footer from "../components/footer.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
 		<link rel="stylesheet" href="/css/global.css" />
+		<link rel="stylesheet" href="https://unpkg.com/lenis@1.2.3/dist/lenis.css">
 		<title>Zensation</title>
 	</head>
 	<body>
@@ -21,14 +22,19 @@ import Footer from "../components/footer.astro";
 			<Footer />
 		</div>
 		<script>
-			import Lenis from "@studio-freight/lenis";
+			import Lenis from 'lenis'
 
 			const lenis = new Lenis({
-				lerp: 0.05, // soepelheid (0 - 1)
-				// smooth: true,
+				autoRaf: true,
 			});
 
-			function raf(time: number) {
+			// Listen for the scroll event and log the event data
+			lenis.on("scroll", (e) => {
+				console.log(e);
+			});
+
+			// Use requestAnimationFrame to continuously update the scroll
+			function raf(time) {
 				lenis.raf(time);
 				requestAnimationFrame(raf);
 			}
